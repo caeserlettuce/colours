@@ -17,27 +17,27 @@
 
 
 @font-face {
-  src: url(/assets/Roboto-Medium.ttf);
+  src: url(assets/Roboto-Medium.ttf);
   font-family: roboto_medium;
 }
 @font-face {
-  src: url(/assets/Roboto-MediumItalic.ttf);
+  src: url(assets/Roboto-MediumItalic.ttf);
   font-family: roboto_medium_italic;
 }
 @font-face {
-  src: url(/assets/Roboto-Bold.ttf);
+  src: url(assets/Roboto-Bold.ttf);
   font-family: roboto_bold;
 }
 @font-face {
-  src: url(/assets/Roboto-BoldItalic.ttf);
+  src: url(assets/Roboto-BoldItalic.ttf);
   font-family: roboto_bold_italic;
 }
 @font-face {
-  src: url(/assets/Roboto-Black.ttf);
+  src: url(assets/Roboto-Black.ttf);
   font-family: roboto_black;
 }
 @font-face {
-  src: url(/assets/Roboto-BlackItalic.ttf);
+  src: url(assets/Roboto-BlackItalic.ttf);
   font-family: roboto_black_italic;
 }
 
@@ -121,6 +121,7 @@ header input {
   margin-left: 10px;
   margin-right: 10px;
   width: max-content;
+  min-width: 90vw;
 }
 
 
@@ -135,6 +136,7 @@ header input {
   border: 5px solid var(--page-border);
   border-radius: 10px;
   padding-right: 0em;
+  padding-top: 5px;
 }
 
 .colour-entry {

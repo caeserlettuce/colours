@@ -1,6 +1,6 @@
 var db = [
   {
-    "name": "hello",
-    "colour": "#ff0000"
+    "name": "Blueberry Red",
+    "colour": "#d94c70"
   },
 ]

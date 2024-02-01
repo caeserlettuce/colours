@@ -5,7 +5,9 @@ var page_index = 1;
 var pages = []
 var colours_per_page = 56;
 
-
+function copyclip(idiot) {
+  navigator.clipboard.writeText(idiot); 
+}
 
 if (windowWidth < windowHeight) {
   // MOBILE!!!
@@ -22,7 +24,10 @@ if (windowWidth < windowHeight) {
 //   document.querySelector(".page").style.width = `${contents_width}px`;
 // }, 500);
 
-
+function funnycopy(col) {
+  console.log(col);
+  copyclip(col);
+}
 
 function build_listing(json) {
 
@@ -43,6 +48,7 @@ function build_listing(json) {
     var node2 = document.querySelector(".colour-entry.template").cloneNode(true);
     node2.classList.remove("template");
     node2.querySelector(".colour").style.color = `${json[i]["colour"]}`;
+    node2.querySelector(".colour").setAttribute("onclick", `funnycopy("${json[i]["colour"]}")`);
     node2.querySelector("h2").innerHTML = `${json[i]["name"]}`;
     document.querySelector(".entries-wrapper").appendChild(node2)
   }
