@@ -11,6 +11,13 @@
   --page-bg: #ffffff;
   --page-border: #dadada;
   --colour-entry-txt: #000000;
+  --notif-txt: #ffffff;
+  --notif-bg: #242424a5;
+  --notif-border: #61616195;
+  --notif-txt-red: #ffffff;
+  --notif-bg-red: #6e1313a5;
+  --notif-border-red: #88272795;
+  --sortbutton-bg: #333333;
 }
 
 /* funny colour */
@@ -92,6 +99,7 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100vw;
   top: 0px;
   left: 0px;
@@ -117,7 +125,7 @@ header input {
 
 .page {
   height: calc(100vh - 6em);
-  margin-top: 1em;
+  margin-top: 3.5em;
   margin-left: 10px;
   margin-right: 10px;
   width: max-content;
@@ -132,32 +140,78 @@ header input {
   gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-content: flex-start;
   background-color: var(--page-bg);
   border: 5px solid var(--page-border);
   border-radius: 10px;
   padding-right: 0em;
   padding-top: 5px;
+  padding-left: 5px;
 }
+
 
 .colour-entry {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 9.85em;
+  /* padding-left: 4px;
+  padding-right: 4px; */
+  max-width: 10em;
+  /* width: 9.85em; */
 }
 
 .colour {
   width: 7em;
   height: 4em;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .colour-entry h2 {
   color: var(--colour-entry-txt);
   font-size: 1.1em;
   margin-top: 2px;
+  text-align: center;
 }
 
 .template {
   display: none !important;
+}
+
+.notif-wrapper {
+  position: fixed;
+  bottom: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.notif {
+  width: fit-content;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: var(--notif-txt);
+  background-color: var(--notif-bg);
+  border: 3px solid var(--notif-border);
+  border-radius: 10px;
+  transition-duration: 500ms;
+}
+
+.red {
+  color: var(--notif-txt-red);
+  background-color: var(--notif-bg-red);
+  border: 3px solid var(--notif-border-red);
+}
+
+.sortbutton {
+  background-color: var(--sortbutton-bg);
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
 }
