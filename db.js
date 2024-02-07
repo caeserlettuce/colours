@@ -38,6 +38,14 @@ var db = [
   {
     "name": "Passion Pink",
     "colour": "#f9176e"
+  },
+  {
+    "name": "Pumpkin Moment",
+    "colour": "#f49025"
+  },
+  {
+    "name": "Honey Moment",
+    "colour": "#f4c500"
   }
   /*
   {
